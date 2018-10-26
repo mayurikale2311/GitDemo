@@ -29,7 +29,7 @@ public class AutomationScripts extends ReusableMethods {
  		logger.log(Status.INFO,"Xero Login  page opened");
  		
  		WebElement username=driver.findElement(getLocator("Xero.login.username",objPro));
-		enterText(username, "username field","Mayurikale2311@gmail.com");
+		enterText(username, "username field","username");
   		
 		WebElement password=driver.findElement(getLocator("Xero.login.password",objPro));
 		enterText(password, "password field","absdc");
@@ -42,13 +42,7 @@ public class AutomationScripts extends ReusableMethods {
 		verifyText(actuaError, "error message",expData);
 		logger.log(Status.INFO, "Login Error msg is validated");
 		closeDriver();
-		//Validate Error message:
-				/*driver.findElement(By.id("email")).sendKeys("mayurikale2311@gmail.com");
-				driver.findElement(By.id("password")).sendKeys("abshc");
-				driver.findElement(By.id("submitButton")).click();
-				System.out.println(driver.findElement(By.xpath("//div[@class='x-boxed warning']//p")).getText());
-				Thread.sleep(3000);
-				driver.close();*/
+		
 				
 		
 	}
@@ -67,7 +61,7 @@ public class AutomationScripts extends ReusableMethods {
  		logger.log(Status.INFO,"Xero Login  page opened");
 		
  		WebElement username=driver.findElement(getLocator("Xero.login.username",objPro));
-		enterText(username, "username field","Mayurikale2311@gmail.com");
+		enterText(username, "username field","username");
 		
 		WebElement passwordlink=driver.findElement(getLocator("Xero.forgot.link",objPro));
 		clickElement(passwordlink, "PasswordLink");
@@ -77,11 +71,7 @@ public class AutomationScripts extends ReusableMethods {
 		verifyText(actuaError, "error message",expData);
 		logger.log(Status.INFO, "Forgot Password error msg is validated");
 		closeDriver();
-		//Validate forget password link:
-		/*driver.findElement(By.id("email")).sendKeys("mayurikale2311@gmail.com");
-		WebElement forget= driver.findElement(By.xpath("//a[@class='forgot-password-advert']"));
-		forget.click();
-		System.out.println(driver.findElement(By.xpath("//p[contains(text(),'To reset your password, enter the email address yo')]")).getText());*/
+		
 		
 	}
 	
