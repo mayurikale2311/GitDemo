@@ -37,12 +37,12 @@ public class DriverScriptTest extends AutomationScripts{
 			flag = recdata[i][1];
 			if(flag.equalsIgnoreCase("Y")) {
 					testCase = recdata[i][0];
-					System.out.println("TestCase:" + testCase + "Helllooo123");
+					System.out.println("TestCase:" + testCase);
 					try {
 						Method testScript = AutomationScripts.class.getMethod(testCase);
-						System.out.println("TestScrit:" + testScript + "Helllooo");
+						System.out.println("TestScrit:" + testScript);
 						testScript.invoke(testScript);
-						System.out.println("AAAAAAAABBBBBBBb");
+						//System.out.println("AAAAAAAABBBBBBBb");
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
