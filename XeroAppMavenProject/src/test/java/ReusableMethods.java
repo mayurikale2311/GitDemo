@@ -105,6 +105,13 @@ public class ReusableMethods extends BaseClass{
 	}
 	public static void createTestScriptReport(String testScriptName){
 		logger = extent.createTest("Validate_Login_Error_Msg");
+		logger = extent.createTest("Validate_Forget_Password");
+		logger = extent.createTest("Validate_GetStarted_msg");
+		logger = extent.createTest("Validate_Term_of_Use_Title");
+		logger = extent.createTest("Validate_Privacy_Link");
+		logger = extent.createTest("Validate_BookKeeper");
+		logger = extent.createTest("Validate_Login_To_Xero");
+		logger = extent.createTest("Validate_Add_Organizations");
 	}
 	public static void endExtentReport(){
 		extent.flush();
